@@ -990,6 +990,80 @@ text-decoration: none;
 }
 /* end services */
 /* start skills */
+.our-skills{
+    padding: 100px 0px;
+    position: relative;
+}
+.our-skills .container > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-skills .container > div .skills-box{
+    flex: 1;
+}
+.our-skills .container div .skills-box .skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.our-skills .container div .skills-box .skill h3{
+    text-transform: uppercase;
+}
+.our-skills .container div .skills-box .skill .skill-bar{
+    background-color: var(--main-color);
+    height: 35px;
+    width: 100%;
+    position: relative;
+}
+.our-skills .container div .skills-box .skill .skill-bar::before{
+    color: var(--main-color);
+    padding: 3px 5px;
+    font-size: 12px;
+    font-weight: 700;
+    border: #cccccc solid 1px;
+    border-radius: 3px;
+    position: absolute;
+    top: -100%;
+    left: 100%;
+    transform: translateX(-100%);
+}
+.our-skills .container div .skills-box .skill .skill-bar::after{
+    content: "";
+    background-color: #eeeeee;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translateX(-99%);
+}
+.our-skills .container div .skills-box .skill:nth-child(1) .skill-bar::before{
+    content: "80%";
+}
+.our-skills .container div .skills-box .skill:nth-child(1) .skill-bar::after{
+    width: 20%;
+}
+.our-skills .container div .skills-box .skill:nth-child(2) .skill-bar::before{
+    content: "85%";
+}
+.our-skills .container div .skills-box .skill:nth-child(2) .skill-bar::after{
+    width: 15%;
+}
+.our-skills .container div .skills-box .skill:nth-child(3) .skill-bar::before{
+    content: "70%";
+}
+.our-skills .container div .skills-box .skill:nth-child(3) .skill-bar::after{
+    width: 30%;
+}
+.our-skills .container div .skills-box .skill:nth-child(4) .skill-bar::before{
+    content: "80%";
+}
+.our-skills .container div .skills-box .skill:nth-child(4) .skill-bar::after{
+    width: 20%;
+}
 /* end skills */
 /* start how it works */
 /* end how it works */
